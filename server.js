@@ -20,9 +20,9 @@ import mongoose from "mongoose";
 
 import dotenv from "dotenv";
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config();
-}
+// if (process.env.NODE_ENV !== "production") {
+dotenv.config();
+// }
 
 mongoose
   .connect(process.env.APP_MONGODB_URI, {
